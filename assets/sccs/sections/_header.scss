@@ -1,0 +1,116 @@
+.header {
+    display: block;
+    &__logo {
+        display: block;
+        &_img {
+            @media screen and (max-width:500px) {
+                width: 59px;
+                height: 45px;
+            }
+        }
+    }
+    &__navbar {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+            gap: 40px;
+        }
+        &_link {
+            color: #121212;
+            font-size: 15px;
+            font-weight: 700;
+            &:hover {
+                color: #645d5d;
+            }
+            @media screen and (max-width:500px) {
+                display: none;
+            }
+        }
+        &_link-1 {
+            color: #121212;
+            font-size: 15px;
+            font-weight: 700;
+            &:hover {
+                color: #645d5d;
+            }
+            @media screen and (max-width:674px) {
+                display: none;
+            }
+        }
+    }
+    &__center {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        @media screen and (max-width:1024px) {
+            gap: 14px;
+        }
+        &-1 {
+            @media screen and (max-width:674px) {
+                display: none;
+            }
+            display: flex;
+            &_icon {
+                display: flex;
+                gap: 10px;
+                &_text {
+                    color: var(--black, #121212);
+                    font-family: Comfortaa;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+        }
+        &-2 {
+            @media screen and (max-width:1117px) {
+                display: none;
+            }
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            &_text {
+                font-family: $main-font;
+                color: #121212;
+                font-size: 16px;
+                font-weight: 600;
+                @media screen and (max-width:1150px) {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__profile {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        &_desktop {
+            margin: 0 20px 0 0;
+            align-items: center;
+            &_img {
+                @media screen and (max-width:500px) {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+        &_mobile {
+            display: none;
+            align-items: center;
+            @media screen and (max-width:500px) {
+                display: block;
+                margin: 0 20px 0 0;
+                width: 30px;
+                align-items: center;
+                height: 20.4px;
+            }
+        }
+    }
+}
+.header__center-2_text {
+    cursor: pointer;
+}
+.header__center-1_icon_text {
+    cursor: pointer;
+}

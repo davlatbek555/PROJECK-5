@@ -1,0 +1,112 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: $main-font-2;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+}
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    gap: 36px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+        @media screen and (max-width:500px) {
+            padding: 15px;
+            align-items: center;
+            display: flex;
+        }
+}
+.container-1 {
+    margin-top: 28px;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width:1290px) {
+        overflow-x: scroll;
+        padding: 0 34px;
+        width: 965px;
+        border-radius: 40px;
+    }
+    @media screen and (max-width:673px) {
+        overflow-x: scroll;
+        width: 622px;
+        border-radius: 40px;
+    }
+    @media screen and (max-width:500px) {
+        border-radius: 0;
+        width: 500px;
+        padding: 5px;
+        margin: 0   ;
+        gap: 0px;
+        border-radius: 0;
+    }
+}
+.container-2 {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 40px;
+    @media screen and (max-width:1287px) {
+        padding: 16px;
+    }
+}
+.center__button {
+    width: 338px;
+    gap: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1250px;
+    margin: 0 auto 36px auto;
+    border-radius: 60px;
+    background: var(--blue, #778CEB);
+    padding: 16px 20px;
+    cursor: pointer;
+    @media screen and (max-width:500px) {
+        width: 400px;
+        align-items: center;
+        display: flex;
+    }
+    &_title {
+        color: #fff;
+        align-items: center;
+        font-family: $main-font-2;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 184.615%;
+        letter-spacing: 0.52px;
+        text-transform: uppercase;
+    }
+}
+.container-3 {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 25px 40px;
+    @media screen and (max-width:1287px) {
+        padding: 16px;
+    }
+}
+.container-4 {
+    width: 100%;
+    max-width: 1340px;
+    margin: 64px auto;
+    padding: 25px 40px;
+    @media screen and (max-width:1287px) {
+        padding: 16px;
+    }
+}
+.main {
+    flex: 1 1 auto;
+}
